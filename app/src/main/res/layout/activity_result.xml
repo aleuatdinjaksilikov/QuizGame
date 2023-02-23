@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B4FF9F"
+    tools:context=".ResultActivity">
+    
+    <ImageView
+        android:id="@+id/icon_congrats"
+        android:layout_width="255dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/text_content_description"
+        android:src="@drawable/icon_congrats"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/signika_negative_semibold"
+        android:text="@string/username"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_size_questions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_congrats" />
+
+    <TextView
+        android:id="@+id/tv_size_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sorawlar_sani"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/abeezee"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="@id/tv_size_answers"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintBottom_toTopOf="@id/tv_size_answers"/>
+
+    <TextView
+        android:id="@+id/tv_size_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/duris_juwaplar_sani"
+        android:textSize="32sp"
+        android:fontFamily="@font/abeezee"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_size_questions"
+        app:layout_constraintStart_toStartOf="@id/guideline2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+    
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/congratulation"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_qaytaOynaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_size_answers"
+        android:text="@string/qayta_oynaw"
+        android:textAllCaps="false"
+        android:backgroundTint="#455DDD"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

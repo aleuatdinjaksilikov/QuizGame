@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LessonTexnopos</string>
+    <string name="sorawlar_sani">Sorawlar sani : 0</string>
+    <string name="duris_juwaplar_sani">Duris juwaplar sani : 0</string>
+    <string name="text_content_description">IMAGE!</string>
+    <string name="username">.</string>
+    <string name="qayta_oynaw">Qayta oynaw</string>
+</resources>
